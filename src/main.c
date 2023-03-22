@@ -21,6 +21,9 @@ int main(int argc, char** argv) {
         /* Wait for user input */
         c = tolower(getch());
 
+        /* Refresh screen */
+        refresh();
+
         /* Parse input. 'q' quits and there is vim-like navigation */
         switch (c) {
             case 'k':
