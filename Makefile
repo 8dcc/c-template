@@ -1,10 +1,11 @@
 
 CC=gcc
 CFLAGS=-Wall -Wextra
-LDFLAGS=
+LDFLAGS=-lncurses -ltinfo
 
-OBJS=obj/main.c.o		# TODO: Add object files
-BIN=output.out			# TODO: Rename
+# TODO: Add object files and rename
+OBJS=obj/main.c.o
+BIN=output.out
 
 .PHONY: clean all run
 
