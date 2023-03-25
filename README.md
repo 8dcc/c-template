@@ -14,3 +14,10 @@ $ make
 ...
 ```
 
+### Usage
+```console
+$ ./project-name.out --help
+...
+
+```
+
