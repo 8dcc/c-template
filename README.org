@@ -1,6 +1,7 @@
 #+title: Title
 #+options: toc:nil
 #+startup: showeverything
+#+export_file_name: ./doc/README.md
 #+author: 8dcc
 
 #+begin_comment
