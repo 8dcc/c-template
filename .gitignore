@@ -1,5 +1,6 @@
 # Doxygen documentation
-/doc/
+/doc/html/
+/doc/latex/
 
 # Prerequisites
 *.d
