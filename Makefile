@@ -23,7 +23,7 @@ clean:
 # -------------------------------------------
 
 $(BIN): $(OBJS)
-	$(CC) -o $@ $(OBJS) $(LDFLAGS)
+	$(CC) $(CFLAGS) -o $@ $(OBJS) $(LDFLAGS)
 
 $(OBJS): obj/%.c.o : src/%.c
 	@mkdir -p obj/
