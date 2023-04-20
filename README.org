@@ -3,6 +3,10 @@
 #+startup: showeverything
 #+author: 8dcc
 
+#+begin_comment
+*TODO*: Change project-name and title
+#+end_comment
+
 *Short description.*
 
 #+TOC: headlines 2
@@ -11,9 +15,6 @@
 Long description.
 
 * Building
-#+begin_comment
-TODO: Change project-name
-#+end_comment
 
 #+begin_src console
 $ git clone https://github.com/8dcc/project-name
