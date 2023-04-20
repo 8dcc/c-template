@@ -6,6 +6,8 @@
 
 #+begin_comment
 *TODO*: Change project-name and title
+*TODO*: Change project name for Doxygen
+*TODO*: Export README.org to markdown for Doxygen
 #+end_comment
 
 *Short description.*
