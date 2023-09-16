@@ -4,7 +4,9 @@ CFLAGS=-Wall -Wextra
 LDFLAGS=
 
 # TODO: Add object files and rename
-OBJS=obj/main.c.o
+OBJ_FILES=main.c.o
+OBJS=$(addprefix obj/, $(OBJ_FILES))
+
 BIN=output.out
 
 .PHONY: clean all run
@@ -25,7 +27,7 @@ clean:
 $(BIN): $(OBJS)
 	$(CC) $(CFLAGS) -o $@ $(OBJS) $(LDFLAGS)
 
-$(OBJS): obj/%.c.o : src/%.c
+obj/%.c.o : src/%.c
 	@mkdir -p obj/
 	$(CC) $(CFLAGS) -c -o $@ $< $(LDFLAGS)
 
