@@ -9,14 +9,11 @@ OBJS=$(addprefix obj/, $(OBJ_FILES))
 
 BIN=output.out
 
-.PHONY: clean all run
-
 #-------------------------------------------------------------------------------
 
-all: $(BIN)
+.PHONY: clean all
 
-run: $(BIN)
-	./$<
+all: $(BIN)
 
 clean:
 	rm -f $(OBJS)
