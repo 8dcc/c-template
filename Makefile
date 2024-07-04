@@ -1,6 +1,6 @@
 
 CC=gcc
-CFLAGS=-Wall -Wextra
+CFLAGS=-std=c99 -Wall -Wextra -Wpedantic -ggdb3
 LDFLAGS=
 
 # TODO: Add object files and rename
