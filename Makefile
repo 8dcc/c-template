@@ -1,7 +1,7 @@
 
 CC=gcc
 CFLAGS=-std=c99 -Wall -Wextra -Wpedantic -ggdb3
-LDFLAGS=
+LDLIBS=
 
 # TODO: Add object files and rename
 OBJ_FILES=main.c.o
@@ -22,7 +22,7 @@ clean:
 #-------------------------------------------------------------------------------
 
 $(BIN): $(OBJS)
-	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
+	$(CC) $(CFLAGS) -o $@ $^ $(LDLIBS)
 
 obj/%.c.o : src/%.c
 	@mkdir -p $(dir $@)
