@@ -4,8 +4,8 @@ CFLAGS=-std=c99 -Wall -Wextra -Wpedantic -ggdb3
 LDLIBS=
 
 # TODO: Add object files and rename
-SRCS=main.c
-OBJS=$(addprefix obj/, $(addsuffix .o, $(SRCS)))
+SRC=main.c
+OBJ=$(addprefix obj/, $(addsuffix .o, $(SRC)))
 
 BIN=output.out
 
@@ -16,12 +16,12 @@ BIN=output.out
 all: $(BIN)
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJ)
 	rm -f $(BIN)
 
 #-------------------------------------------------------------------------------
 
-$(BIN): $(OBJS)
+$(BIN): $(OBJ)
 	$(CC) $(CFLAGS) -o $@ $^ $(LDLIBS)
 
 obj/%.c.o : src/%.c
