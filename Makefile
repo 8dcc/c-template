@@ -9,6 +9,10 @@ OBJ=$(addprefix obj/, $(addsuffix .o, $(SRC)))
 
 BIN=output.out
 
+# TODO: Remove install target when not necessary
+PREFIX=/usr/local
+BINDIR=$(PREFIX)/bin
+
 #-------------------------------------------------------------------------------
 
 .PHONY: all clean
@@ -18,6 +22,10 @@ all: $(BIN)
 clean:
 	rm -f $(OBJ)
 	rm -f $(BIN)
+
+install: $(BIN)
+	mkdir -p $(BINDIR)
+	install -m 755 $^ $(DESTDIR)$(BINDIR)
 
 #-------------------------------------------------------------------------------
 
