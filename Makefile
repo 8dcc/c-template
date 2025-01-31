@@ -15,7 +15,7 @@ BINDIR=$(PREFIX)/bin
 
 #-------------------------------------------------------------------------------
 
-.PHONY: all clean
+.PHONY: all clean install
 
 all: $(BIN)
 
@@ -24,8 +24,7 @@ clean:
 	rm -f $(BIN)
 
 install: $(BIN)
-	mkdir -p $(BINDIR)
-	install -m 755 $^ $(DESTDIR)$(BINDIR)
+	install -D -m 755 $^ -t $(DESTDIR)$(BINDIR)
 
 #-------------------------------------------------------------------------------
 
