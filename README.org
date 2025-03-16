@@ -1,7 +1,6 @@
 #+title: Title (WIP)
-#+options: toc:nil
-#+startup: showeverything
 #+author: 8dcc
+#+startup: showeverything
 
 #+begin_comment
 *TODO*: Change project-name and title
