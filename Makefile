@@ -1,6 +1,6 @@
 
 CC=gcc
-CFLAGS=-std=c99 -Wall -Wextra -Wpedantic -Wshadow# -ggdb3 -fsanitize=address,undefined -fstack-protector-strong
+CFLAGS=-std=c99 -Wall -Wextra -Wpedantic -Wshadow# -ggdb3 -fsanitize=address,leak,undefined -fstack-protector-strong
 LDLIBS=
 
 # TODO: Add object files and rename
